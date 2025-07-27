@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Pretty Girl</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      color: #333;
+    }
+
+    h1 {
+      margin-top: 50px;
+      font-size: 2.5em;
+      color: #d81b60;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 30px 10px;
+    }
+
+    .gallery img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>You're My Pretty, Adel 🩷</h1>
+  <p>Even though we're far apart, you’ve never left my mind. Cuz you’re my preeettyyyyy~ 🎶</p>
+  
+  <div class="gallery">
+    <!-- Ganti link gambar di bawah ini dengan gambar kamu sendiri -->
+    <img src="https://via.placeholder.com/100" alt="photo1">
+    <img src="https://via.placeholder.com/100" alt="photo2">
+    <img src="https://via.placeholder.com/100" alt="photo3">
+    <img src="https://via.placeholder.com/100" alt="photo4">
+  </div>
+
+  <footer>
+    Made with 🫶 from a distance<br/>Even LDR can’t stop me from loving you.
+  </footer>
+</body>
+</html>
