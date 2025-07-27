@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hadiah buat Adel</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff6f9;
+      font-family: sans-serif;
+      text-align: center;
+    }
+    .slider {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .slide h1 {
+      font-size: 2.5rem;
+      color: #ff6aa5;
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <section class="slide active">
+      <h1 id="typing-text">You're my pretty </h1>
+    </section>
+  </div>
+
+  <audio autoplay loop>
+    <source src="pretty.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Tambahan efek ketik (opsional)
+    const text = "You're my pretty 🥰";
+    const el = document.getElementById("typing-text");
+    let i = 0;
+    el.innerHTML = "";
+
+    function type() {
+      if (i < text.length) {
+        el.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, 100);
+      }
+    }
+    type();
+  </script>
+</body>
+</html>
