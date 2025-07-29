@@ -1,61 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hadiah buat Adel</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #fff6f9;
-      font-family: sans-serif;
-      text-align: center;
-    }
-    .slider {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .slide h1 {
-      font-size: 2.5rem;
-      color: #ff6aa5;
-      animation: fadeIn 2s ease-in-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Happy National Girlfriend Day 😄</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="slider">
-    <section class="slide active">
-      <h1 id="typing-text">You're my pretty 🥰</h1>
-    </section>
-  </div>
+
+  <section class="slide" id="slide1">
+    <h1>HAPPY NATIONAL GIRLFRIEND DAY 😄</h1>
+    <p>ini ad hadiah kecil buat km, moga km senangg hehe 💕</p>
+  </section>
+
+  <section class="slide" id="slide2">
+    <h2>Inget ga? Ini chat-an pertama kita 😳</h2>
+    <img src="assets/foto-chat-pertama.jpg" alt="Chat Pertama Kita">
+  </section>
+
+  <section class="slide" id="slide3">
+    <h2>Top 3 Pap Kamu yang Paling Lucuu 😍</h2>
+    <ol>
+      <li><img src="assets/pap1.jpg" alt="Rank 1 🥇"></li>
+      <li><img src="assets/pap2.jpg" alt="Rank 2 🥈"></li>
+      <li><img src="assets/pap3.jpg" alt="Rank 3 🥉"></li>
+    </ol>
+  </section>
+
+  <section class="slide" id="slide4">
+    <h2>🥹💌</h2>
+    <p>
+      Heheh makasiii yaa uda mw nemeninn akuu selamaaa iniii 😚<br>
+      Mungkin hadiah ini ga setara dgn usaha ap yg km lakuin ke akuuu<br>
+      Tapii moga km suka deh wkwkwk 💗💗
+    </p>
+  </section>
 
   <audio autoplay loop>
-    <source src="pretty.mp3" type="audio/mpeg">
+    <source src="assets/pretty.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
-  <script>
-    // Tambahan efek ketik (opsional)
-    const text = "You're my pretty 🥰";
-    const el = document.getElementById("typing-text");
-    let i = 0;
-    el.innerHTML = "";
-
-    function type() {
-      if (i < text.length) {
-        el.innerHTML += text.charAt(i);
-        i++;
-        setTimeout(type, 100);
-      }
-    }
-    type();
-  </script>
 </body>
 </html>
