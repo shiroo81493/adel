@@ -1,0 +1,27 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #fffafc;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.slide {
+  padding: 50px 20px;
+  text-align: center;
+  min-height: 100vh;
+  border-bottom: 2px dashed pink;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 20px 0;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+}
